@@ -37,7 +37,6 @@ public class MainActivity6 extends AppCompatActivity {
             Intent intent=new Intent(this,MainActivity3.class);
             intent.putExtra(markformquiz5,mark);
             startActivity(intent);
-            finish();
 
         }else{
             Toast.makeText(this,"please select fast",Toast.LENGTH_LONG).show();

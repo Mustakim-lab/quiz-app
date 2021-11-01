@@ -14,55 +14,50 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:layout_marginTop="15dp"
-            android:text="@string/question1">
+            android:text="@string/question1"
+            android:layout_marginTop="15dp">
+
         </TextView>
 
-        <RadioGroup
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question1RadioGroup">
+
+        <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/question1RadioGroup">
+            android:id="@+id/quiz1Ans1_ID"
+            android:text="Dhaka"></RadioButton>
 
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/quiz1Ans1_ID"
-                android:text="Dhaka"></RadioButton>
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/quiz1Ans2_ID"
-                android:text="khulna"></RadioButton>
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/quiz1Ans3_ID"
-                android:text="Bogura"></RadioButton>
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/quiz1Ans4_ID"
-                android:text="None of these"></RadioButton>
-
-        </RadioGroup>
-
-
-
-
-
-        <Button
+        <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:onClick="submitOnclick"
-            android:text="Next"
-            android:id="@+id/submitBtn_ID"></Button>
+            android:id="@+id/quiz1Ans2_ID"
+            android:text="Khulna"></RadioButton>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quiz1Ans3_ID"
+            android:text="Bogura"></RadioButton>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quiz1Ans4_ID"
+            android:text="None of these"></RadioButton>
+    </RadioGroup>
 
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="submitOnclick"
+        android:text="Next"
+        android:id="@+id/submitBtn_ID"></Button>
 
 
 </LinearLayout>
